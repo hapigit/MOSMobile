@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — MOS Mobile</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.7;
+        }
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            padding: 60px 20px 50px;
+            text-align: center;
+        }
+        .header h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.5px; }
+        .header p { margin-top: 10px; font-size: 1rem; opacity: 0.7; }
+        .lang-toggle {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 24px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.3);
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .lang-toggle:hover { background: rgba(255,255,255,0.15); }
+        .container {
+            max-width: 720px;
+            margin: -30px auto 60px;
+            padding: 0 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px 36px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        h2 { font-size: 1.25rem; font-weight: 600; margin: 28px 0 10px; color: #1d1d1f; }
+        h2:first-child { margin-top: 0; }
+        p, li { font-size: 0.95rem; color: #333; }
+        p { margin-bottom: 12px; }
+        ul { padding-left: 20px; margin-bottom: 14px; }
+        li { margin-bottom: 6px; }
+        strong { color: #1d1d1f; }
+        .meta { font-size: 0.85rem; color: #86868b; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #e5e5e5; }
+        [lang="zh"] { display: none; }
+        body.zh-lang [lang="en"] { display: none; }
+        body.zh-lang [lang="zh"] { display: block; }
+        body.zh-lang .meta-zh { display: block; }
+        .meta-zh { display: none; }
+        .footer { text-align: center; padding: 30px 20px 40px; font-size: 0.8rem; color: #86868b; }
+        @media (max-width: 600px) {
+            .header { padding: 40px 16px 36px; }
+            .header h1 { font-size: 1.6rem; }
+            .card { padding: 28px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Privacy Policy</h1>
+        <p>MOS Mobile</p>
+        <button class="lang-toggle" onclick="document.body.classList.toggle('zh-lang'); this.textContent=document.body.classList.contains('zh-lang')?'English':'中文'">中文</button>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <!-- English -->
+            <div lang="en">
+                <div class="meta">Effective Date: January 1, 2025 &nbsp;|&nbsp; Last Updated: June 1, 2025 &nbsp;|&nbsp; Developer: MosTech</div>
+
+                <h2>1. Introduction</h2>
+                <p>MOS Mobile ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile application MOS Mobile (the "App").</p>
+                <p>MOS Mobile is a companion app for the MOS (Motion Operation System) desktop platform, designed to control camera robots over a local network.</p>
+
+                <h2>2. Information We Collect</h2>
+
+                <h2>2.1 Camera Access</h2>
+                <ul>
+                    <li><strong>Purpose:</strong> The App accesses your device's camera for motion-sensing control features.</li>
+                    <li><strong>How:</strong> Camera data is processed on-device in real-time to detect motion gestures for controlling camera robots.</li>
+                    <li><strong>Storage:</strong> Camera data is <strong>NOT</strong> stored, recorded, or transmitted. All processing occurs locally on your device.</li>
+                </ul>
+
+                <h2>2.2 Motion Sensor Data</h2>
+                <ul>
+                    <li><strong>Purpose:</strong> The App uses your device's motion sensors (accelerometer, gyroscope) for motion-sensing control.</li>
+                    <li><strong>How:</strong> Sensor data is translated into camera robot control commands in real-time.</li>
+                    <li><strong>Storage:</strong> Motion data is <strong>NOT</strong> stored or recorded. It is transmitted only over your local network (LAN) to the MOS desktop software on your PC.</li>
+                </ul>
+
+                <h2>2.3 Local Network Communication</h2>
+                <ul>
+                    <li><strong>Purpose:</strong> The App communicates with the MOS desktop software on your PC over your local network (LAN).</li>
+                    <li><strong>How:</strong> Control commands and status data are exchanged between your device and the PC over the local network only.</li>
+                    <li><strong>Storage:</strong> No data is transmitted to external servers or the internet. All communication stays within your local network.</li>
+                </ul>
+
+                <h2>2.4 No Personal Data Collection</h2>
+                <p>We do <strong>NOT</strong> collect, store, or transmit:</p>
+                <ul>
+                    <li>Personal identification information (name, email, phone number)</li>
+                    <li>Location data</li>
+                    <li>Device identifiers</li>
+                    <li>Usage analytics</li>
+                    <li>Any data to external servers</li>
+                </ul>
+
+                <h2>3. Third-Party Services</h2>
+                <p>The App does not integrate any third-party analytics, advertising, or tracking services.</p>
+
+                <h2>4. Data Storage</h2>
+                <p>All data generated by the App is processed in real-time and is not persistently stored. The App does not save any user data locally or remotely.</p>
+
+                <h2>5. Network Usage</h2>
+                <p>The App only communicates over your local network (LAN). It does <strong>NOT</strong> connect to the internet, external servers, or any cloud services.</p>
+
+                <h2>6. Children's Privacy</h2>
+                <p>The App does not knowingly collect any personal information from children under 13. The App is rated 4+ and does not contain any content inappropriate for children.</p>
+
+                <h2>7. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the "Last Updated" date above.</p>
+
+                <h2>8. Contact Us</h2>
+                <p>If you have questions about this Privacy Policy, please contact us at:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:hapiatg@gmail.com">hapiatg@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <!-- Chinese -->
+            <div lang="zh">
+                <div class="meta meta-zh">生效日期：2025年1月1日 &nbsp;|&nbsp; 最后更新：2025年6月1日 &nbsp;|&nbsp; 开发者：MosTech</div>
+
+                <h2>1. 引言</h2>
+                <p>MOS Mobile（"我们"）致力于保护您的隐私。本隐私政策说明了您使用我们的移动应用 MOS Mobile（"本应用"）时，我们如何处理信息。</p>
+                <p>MOS Mobile 是 MOS（Motion Operation System）桌面端平台的伴侣应用，用于通过局域网控制摄影机器人。</p>
+
+                <h2>2. 我们收集的信息</h2>
+
+                <h2>2.1 相机访问</h2>
+                <ul>
+                    <li><strong>用途：</strong>本应用访问您设备的摄像头用于体感操控功能。</li>
+                    <li><strong>方式：</strong>相机数据在您的设备上实时处理，用于检测控制摄影机器人的体感手势。</li>
+                    <li><strong>存储：</strong>相机数据<strong>不会</strong>被存储、录制或传输。所有处理均在您的设备本地完成。</li>
+                </ul>
+
+                <h2>2.2 运动传感器数据</h2>
+                <ul>
+                    <li><strong>用途：</strong>本应用使用您设备的运动传感器（加速度计、陀螺仪）进行体感操控。</li>
+                    <li><strong>方式：</strong>传感器数据实时转换为摄影机器人的控制指令。</li>
+                    <li><strong>存储：</strong>运动数据<strong>不会</strong>被存储或录制，仅通过局域网（LAN）传输至您 PC 上的 MOS 桌面软件。</li>
+                </ul>
+
+                <h2>2.3 局域网通信</h2>
+                <ul>
+                    <li><strong>用途：</strong>本应用通过局域网（LAN）与您 PC 上的 MOS 桌面软件进行通信。</li>
+                    <li><strong>方式：</strong>控制指令和状态数据仅在本地网络内于您的设备和 PC 之间交换。</li>
+                    <li><strong>存储：</strong>不向外部服务器或互联网传输任何数据。所有通信均在您的局域网内完成。</li>
+                </ul>
+
+                <h2>2.4 不收集个人数据</h2>
+                <p>我们<strong>不会</strong>收集、存储或传输：</p>
+                <ul>
+                    <li>个人身份信息（姓名、邮箱、电话号码）</li>
+                    <li>位置数据</li>
+                    <li>设备标识符</li>
+                    <li>使用分析数据</li>
+                    <li>任何发送至外部服务器的数据</li>
+                </ul>
+
+                <h2>3. 第三方服务</h2>
+                <p>本应用不集成任何第三方分析、广告或追踪服务。</p>
+
+                <h2>4. 数据存储</h2>
+                <p>本应用生成的所有数据均为实时处理，不做持久化存储。本应用不会在本地或远程保存任何用户数据。</p>
+
+                <h2>5. 网络使用</h2>
+                <p>本应用仅通过您的局域网（LAN）进行通信。<strong>不会</strong>连接互联网、外部服务器或任何云服务。</p>
+
+                <h2>6. 儿童隐私</h2>
+                <p>本应用不会有意收集 13 岁以下儿童的任何个人信息。本应用评级为 4+，不包含任何不适合儿童的内容。</p>
+
+                <h2>7. 政策变更</h2>
+                <p>我们可能会不时更新本隐私政策。任何变更将反映在上述"最后更新"日期中。</p>
+
+                <h2>8. 联系我们</h2>
+                <p>如您对本隐私政策有任何疑问，请联系我们：</p>
+                <ul>
+                    <li><strong>邮箱：</strong><a href="mailto:hapiatg@gmail.com">hapiatg@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">© 2025 MosTech. All rights reserved.</div>
+</body>
+</html>

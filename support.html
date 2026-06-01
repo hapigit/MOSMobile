@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — MOS Mobile</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.7;
+        }
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            padding: 60px 20px 50px;
+            text-align: center;
+        }
+        .header h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.5px; }
+        .header p { margin-top: 10px; font-size: 1rem; opacity: 0.7; }
+        .lang-toggle {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 24px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.3);
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .lang-toggle:hover { background: rgba(255,255,255,0.15); }
+        .container {
+            max-width: 720px;
+            margin: -30px auto 60px;
+            padding: 0 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px 36px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        h2 { font-size: 1.2rem; font-weight: 600; margin: 28px 0 10px; color: #1d1d1f; }
+        h2:first-child { margin-top: 0; }
+        p { font-size: 0.95rem; color: #333; margin-bottom: 12px; }
+        ul { padding-left: 20px; margin-bottom: 14px; }
+        li { font-size: 0.95rem; color: #333; margin-bottom: 6px; }
+        strong { color: #1d1d1f; }
+        a { color: #0071e3; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact-box {
+            background: #f9f9fb;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        .contact-box p { margin-bottom: 8px; }
+        .steps { counter-reset: step; list-style: none; padding-left: 0; }
+        .steps li {
+            counter-increment: step;
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 16px;
+        }
+        .steps li::before {
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: -2px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #1a1a2e;
+            color: #fff;
+            text-align: center;
+            line-height: 28px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        [lang="zh"] { display: none; }
+        body.zh-lang [lang="en"] { display: none; }
+        body.zh-lang [lang="zh"] { display: block; }
+        .footer { text-align: center; padding: 30px 20px 40px; font-size: 0.8rem; color: #86868b; }
+        @media (max-width: 600px) {
+            .header { padding: 40px 16px 36px; }
+            .header h1 { font-size: 1.6rem; }
+            .card { padding: 28px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Support</h1>
+        <p>MOS Mobile</p>
+        <button class="lang-toggle" onclick="document.body.classList.toggle('zh-lang'); this.textContent=document.body.classList.contains('zh-lang')?'English':'中文'">中文</button>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <!-- English -->
+            <div lang="en">
+                <h2>Getting Started</h2>
+                <ol class="steps">
+                    <li>Launch the MOS desktop software on your PC and connect your camera robot</li>
+                    <li>Ensure your iPhone/iPad is on the same local network (Wi-Fi) as your PC</li>
+                    <li>Open MOS Mobile, then click the APP Control button on the PC-side MOS software</li>
+                    <li>Use the Control page for real-time motion-sensing operation, or the Keyframe page to program and replay camera moves</li>
+                </ol>
+
+                <h2>Requirements</h2>
+                <ul>
+                    <li>PC running MOS desktop software (Windows)</li>
+                    <li>Camera robot connected to the PC</li>
+                    <li>iPhone/iPad and PC on the same local network (Wi-Fi)</li>
+                    <li>iOS 15.0 or later</li>
+                    <li>Camera and motion sensor permissions enabled</li>
+                </ul>
+
+                <h2>FAQ</h2>
+
+                <h2>Q: Why can't my device connect to the PC?</h2>
+                <p>Make sure both your iPhone/iPad and PC are connected to the same Wi-Fi network. Some enterprise or guest networks block device-to-device communication. If the issue persists, try restarting the MOS desktop software and the app.</p>
+
+                <h2>Q: The motion control feels laggy. What can I do?</h2>
+                <p>Motion control relies on a stable, low-latency LAN connection. For best results, use a dedicated 5 GHz Wi-Fi network with minimal interference. Avoid crowded public networks.</p>
+
+                <h2>Q: Does the app work without the PC software?</h2>
+                <p>No. MOS Mobile is designed as a companion app for the MOS desktop platform. You need the MOS desktop software running on a PC with a connected camera robot.</p>
+
+                <h2>Q: Does the app need an internet connection?</h2>
+                <p>No. All communication happens over your local network (LAN). No internet connection is required.</p>
+
+                <h2>Contact Us</h2>
+                <div class="contact-box">
+                    <p><strong>Email:</strong> <a href="mailto:hapiatg@gmail.com">hapiatg@gmail.com</a></p>
+                    <p>We typically respond within 1–2 business days.</p>
+                </div>
+            </div>
+
+            <!-- Chinese -->
+            <div lang="zh">
+                <h2>快速上手</h2>
+                <ol class="steps">
+                    <li>在 PC 上启动 MOS 桌面软件并连接摄影机器人</li>
+                    <li>确保 iPhone/iPad 与 PC 处于同一局域网（Wi-Fi）</li>
+                    <li>打开 MOS Mobile，点击 PC 端 MOS 软件上的 APP 控制按钮</li>
+                    <li>使用操控页面进行实时体感操控，或使用关键帧页面编程和回放摄影机运动路径</li>
+                </ol>
+
+                <h2>系统要求</h2>
+                <ul>
+                    <li>PC 端运行 MOS 桌面软件（Windows）</li>
+                    <li>摄影机器人已连接至 PC</li>
+                    <li>iPhone/iPad 与 PC 处于同一局域网（Wi-Fi）</li>
+                    <li>iOS 15.0 或更高版本</li>
+                    <li>已开启相机和运动传感器权限</li>
+                </ul>
+
+                <h2>常见问题</h2>
+
+                <h2>问：为什么设备无法连接 PC？</h2>
+                <p>请确保您的 iPhone/iPad 和 PC 连接到同一个 Wi-Fi 网络。部分企业网络或访客网络会阻止设备间通信。如问题持续，请尝试重启 MOS 桌面软件和 App。</p>
+
+                <h2>问：体感操控有延迟怎么办？</h2>
+                <p>体感操控依赖稳定低延迟的局域网连接。建议使用专用 5 GHz Wi-Fi 网络，减少干扰。避免使用拥挤的公共网络。</p>
+
+                <h2>问：没有 PC 软件也能用吗？</h2>
+                <p>不能。MOS Mobile 是 MOS 桌面平台的伴侣应用，需要在 PC 上运行 MOS 桌面软件并连接摄影机器人。</p>
+
+                <h2>问：需要联网吗？</h2>
+                <p>不需要。所有通信均在局域网（LAN）内完成，无需互联网连接。</p>
+
+                <h2>联系我们</h2>
+                <div class="contact-box">
+                    <p><strong>邮箱：</strong><a href="mailto:hapiatg@gmail.com">hapiatg@gmail.com</a></p>
+                    <p>我们通常会在 1–2 个工作日内回复。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">© 2025 MosTech. All rights reserved.</div>
+</body>
+</html>
